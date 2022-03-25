@@ -24,7 +24,7 @@ class Calculator {
       if (this.currentOperand === '') return
       if (this.previousOperand !== '') {
         this.compute();
-      };
+      }
       this.operation = operation;
       this.previousOperand = this.currentOperand;
       this.currentOperand = '';
@@ -49,7 +49,7 @@ class Calculator {
           computation = prev / current;
           break
         default:
-          return
+          return;
       }
       this.currentOperand = computation;
       this.operation = undefined;
